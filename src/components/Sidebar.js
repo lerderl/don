@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <>
@@ -9,14 +11,14 @@ const Sidebar = () => {
             className="page-sidebar-menu page-sidebar-menu-hover-submenu page-sidebar-menu-compact"
           >
             <li className="start active">
-              <a className="ajaxify start" href="dashboard.php">
+              <Link className="ajaxify start" to='/dashboard'>
                 <i className="icon-home"></i>
                 <span className="title">Dashboard</span>
                 <span className="selected"></span>
-              </a>
+              </Link>
             </li>
             <li className="open">
-              <a href="javascript:;">
+              <a href="#!">
                 <i className="icon-settings"></i>
                 <span className="title">Configuration</span>
                 <span className="selected"></span>
