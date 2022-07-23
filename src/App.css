@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.tab {
+  background-color: white;
+}
+
+.dropdown-height {
+  height: 40px;
+}
+
+.header-height {
+  height: 34px;
+}

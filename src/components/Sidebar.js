@@ -11,7 +11,7 @@ const Sidebar = () => {
             className="page-sidebar-menu page-sidebar-menu-hover-submenu page-sidebar-menu-compact"
           >
             <li className="start active">
-              <Link className="ajaxify start" to='/dashboard'>
+              <Link className="ajaxify start" to='/'>
                 <i className="icon-home"></i>
                 <span className="title">Dashboard</span>
                 <span className="selected"></span>

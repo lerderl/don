@@ -14,7 +14,7 @@ const Header = () => {
 
           <div className="dropdown">
             <button
-              className="btn btn-light dropdown-toggle"
+              className="btn btn-light dropdown-toggle header-height"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"

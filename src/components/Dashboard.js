@@ -1,132 +1,20 @@
-import Header from "./Header";
-import Sidebar from "./Sidebar";
+import { useState } from "react";
+import Calendar from "react-calendar";
+import 'react-calendar/dist/Calendar.css'
+
+import Image from "../image.png";
 
 const Dashboard = () => {
+  const [date, setDate] = useState(new Date());
   return (
     <>
-      <Header />
-      <Sidebar />
       <div className="page-content-wrapper">
-        <div className="page-content" style={{ minHeight: "555px" }}>
-          {/* <div className="theme-panel">
-            <div
-              className="toggler tooltips"
-              data-container="body"
-              data-placement="left"
-              data-html="true"
-              data-original-title="Click to open advance theme customizer panel"
-            >
-              <i className="icon-settings"></i>
-            </div>
-            <div className="toggler-close">
-              <i className="icon-close"></i>
-            </div>
-            <div className="theme-options">
-              <div className="theme-option theme-colors clearfix">
-                <span>THEME COLOR </span>
-                <ul>
-                  <li
-                    className="color-default current tooltips"
-                    data-style="default"
-                    data-container="body"
-                    data-original-title="Default"
-                  ></li>
-                  <li
-                    className="color-grey tooltips"
-                    data-style="grey"
-                    data-container="body"
-                    data-original-title="Grey"
-                  ></li>
-                  <li
-                    className="color-blue tooltips"
-                    data-style="blue"
-                    data-container="body"
-                    data-original-title="Blue"
-                  ></li>
-                  <li
-                    className="color-dark tooltips"
-                    data-style="dark"
-                    data-container="body"
-                    data-original-title="Dark"
-                  ></li>
-                  <li
-                    className="color-light tooltips"
-                    data-style="light"
-                    data-container="body"
-                    data-original-title="Light"
-                  ></li>
-                </ul>
-              </div>
-              <div className="theme-option">
-                <span>Layout </span>
-                <select className="layout-option form-control input-small">
-                  <option value="fluid" selected="selected">
-                    Fluid
-                  </option>
-                  <option value="boxed">Boxed</option>
-                </select>
-              </div>
-              <div className="theme-option">
-                <span>Header </span>
-                <select className="page-header-option form-control input-small">
-                  <option value="fixed" selected="selected">
-                    Fixed
-                  </option>
-                  <option value="default">Default</option>
-                </select>
-              </div>
-              <div className="theme-option">
-                <span>Sidebar Mode</span>
-                <select className="sidebar-option form-control input-small">
-                  <option value="fixed" selected="selected">
-                    Fixed
-                  </option>
-                  <option value="default">Default</option>
-                </select>
-              </div>
-              <div className="theme-option">
-                <span>Sidebar Style</span>
-                <select className="sidebar-style-option form-control input-small">
-                  <option value="default">Default</option>
-                  <option value="compact" selected="selected">
-                    Compact
-                  </option>
-                </select>
-              </div>
-              <div className="theme-option">
-                <span>Sidebar Menu </span>
-                <select className="sidebar-menu-option form-control input-small">
-                  <option value="accordion" selected="selected">
-                    Accordion
-                  </option>
-                  <option value="hover">Hover</option>
-                </select>
-              </div>
-              <div className="theme-option">
-                <span>Sidebar Position </span>
-                <select className="sidebar-pos-option form-control input-small">
-                  <option value="left" selected="selected">
-                    Left
-                  </option>
-                  <option value="right">Right</option>
-                </select>
-              </div>
-              <div className="theme-option">
-                <span>Footer </span>
-                <select className="page-footer-option form-control input-small">
-                  <option value="fixed">Fixed</option>
-                  <option value="default" selected="selected">
-                    Default
-                  </option>
-                </select>
-              </div>
-            </div>
-          </div> */}
+        <div className="page-content bg-light" style={{ minHeight: "773px" }}>
           <div className="page-content-body" id="page-content-body">
             <h3 className="page-title">Dashboard</h3>
           </div>
 
-          <ul className="nav bg-light position-relative">
+          <ul className="nav tab position-relative">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Home
@@ -138,7 +26,7 @@ const Dashboard = () => {
               </a>
             </li>
             <button
-              className="btn btn-light dropdown-toggle position-absolute top-0 end-0"
+              className="btn btn-light dropdown-toggle position-absolute top-0 end-0 dropdown-height"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -172,45 +60,89 @@ const Dashboard = () => {
             </ul>
           </ul>
 
-          {/* <ul className="page-breadcrumb">
-            <li>
-              <i className="fa fa-home"></i>
-              <a href="index.php">Home</a>
-              <i className="fa fa-angle-right"></i>
-            </li>
-            <li>
-              <a href="#">Dashboard </a>
-            </li>
-          </ul>
-          <div className="page-toolbar">
-            <div className="btn-group pull-right">
-              <button
-                type="button"
-                className="btn btn-fit-height grey-salt dropdown-toggle hover-initialized"
-                data-toggle="dropdown"
-                data-hover="dropdown"
-                data-delay="1000"
-                data-close-others="true"
-              >
-                Actions <i className="fa fa-angle-down"></i>
-              </button>
-              <ul className="dropdown-menu pull-right" role="menu">
-                <li>
-                  <a href="#">Print</a>
+          <div className="container tab mt-4">
+            <div className="row row-cols-1 row-cols-md-4 g-4 mt-4">
+              <div className="col" style={{ height: "100px" }}>
+                <div className="card h-100 text-end text-bg-primary">
+                  <div className="card-body mt-4">
+                    <h5 className="card-title">1</h5>
+                    <p className="card-text">New Students</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card h-100 text-end text-bg-secondary">
+                  <div className="card-body mt-4">
+                    <h5 className="card-title">59</h5>
+                    <p className="card-text">Active Students</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card h-100 text-end text-bg-success">
+                  <div className="card-body mt-4">
+                    <h5 className="card-title">6</h5>
+                    <p className="card-text">Active Employees</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card h-100 text-end text-bg-danger">
+                  <div className="card-body mt-4">
+                    <h5 className="card-title">0</h5>
+                    <p className="card-text">Inactive Employees</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="container mt-4 row row-cols-1 row-cols-md-2">
+              <ul className="nav nav-tabs">
+                <li className="nav-item text-success mt-3" style={{ marginRight: "30px" }}>
+                  CALENDAR
                 </li>
-                <li>
-                  <a href="#">Export to Excel</a>
+                <li className="nav-item">
+                  <a className="nav-link disabled">TODAY</a>
                 </li>
-                <li>
-                  <a href="#">Export to Word</a>
+                <li className="nav-item">
+                  <a className="nav-link active" aria-current="page" href="#">MONTH</a>
                 </li>
-                <li className="divider"></li>
-                <li>
-                  <a href="#">Save As</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">WEEK</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">DAY</a>
+                </li>
+              </ul>
+              <ul className="nav nav-tabs">
+                <li className="nav-item text-success mt-3" style={{ marginRight: "30px", marginLeft: "30px" }}>
+                  NOTICE BOARD
+                </li>
+                <li className="nav-item" style={{  marginLeft: "90px" }}>
+                  <a className="nav-link active" aria-current="page" href="#">School</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Personal</a>
                 </li>
               </ul>
             </div>
-          </div> */}
+
+            <div className="row mt-4 row row-cols-1 row-cols-md-2">
+              <div className="mt-4 col-6">
+                <div className="calendar-container">
+                  <Calendar onChange={setDate} value={date}/>
+                </div>
+                <div className="text-center mt-4">
+                    Selected date: {date.toDateString()}
+                </div>
+              </div>
+
+              <form className="d-flex" role="search">
+                <img src={Image} alt="" width="30" height="35" />
+                <input className="form-control me-2 bg-light" type="search" placeholder="" aria-label="Search" />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </>
