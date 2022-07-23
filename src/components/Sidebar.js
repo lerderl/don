@@ -26,9 +26,9 @@ const Sidebar = () => {
               </a>
               <ul className="sub-menu" style={{ display: "block" }}>
                 <li>
-                  <a className="ajaxify" href="system_setup.php">
+                  <Link className="ajaxify" to="/configuration/system">
                     System
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="ajaxify" href="company_setup.php">

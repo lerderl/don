@@ -6,6 +6,7 @@ import Image from "../image.png";
 
 const Dashboard = () => {
   const [date, setDate] = useState(new Date());
+
   return (
     <>
       <div className="page-content-wrapper">
@@ -26,10 +27,10 @@ const Dashboard = () => {
               </a>
             </li>
             <button
-              className="btn btn-light dropdown-toggle position-absolute top-0 end-0 dropdown-height"
               type="button"
-              data-bs-toggle="dropdown"
               aria-expanded="false"
+              data-bs-toggle="dropdown"
+              className="btn btn-light dropdown-toggle position-absolute top-0 end-0 dropdown-height"
             >
               Actions
             </button>
@@ -127,17 +128,17 @@ const Dashboard = () => {
               </ul>
             </div>
 
-            <div className="row mt-4 row row-cols-1 row-cols-md-2">
-              <div className="mt-4 col-6">
-                <div className="calendar-container">
+            <div className="row mt-4 row row-cols-1 row-cols-md-2 mb-5">
+              <div className="mt-4 mb-5 col-6">
+                <div className="calendar-container mb-5">
                   <Calendar onChange={setDate} value={date}/>
                 </div>
-                <div className="text-center mt-4">
+                <div className="text-center mt-4 mb-5">
                     Selected date: {date.toDateString()}
                 </div>
               </div>
 
-              <form className="d-flex" role="search">
+              <form className="d-flex mt-4" role="search">
                 <img src={Image} alt="" width="30" height="35" />
                 <input className="form-control me-2 bg-light" type="search" placeholder="" aria-label="Search" />
               </form>
