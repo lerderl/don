@@ -10,7 +10,7 @@ const Sidebar = () => {
             data-auto-scroll="true"
             className="page-sidebar-menu page-sidebar-menu-hover-submenu page-sidebar-menu-compact"
           >
-            <li className="start">
+            <li className="open">
               <Link className="ajaxify start" to='/'>
                 <i className="icon-home"></i>
                 <span className="title">Dashboard</span>
@@ -31,9 +31,9 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a className="ajaxify" href="company_setup.php">
+                  <Link className="ajaxify" to="/configuration/school">
                     School
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="ajaxify" href="branch_setup.php">
