@@ -10,7 +10,7 @@ const Sidebar = () => {
             data-auto-scroll="true"
             className="page-sidebar-menu page-sidebar-menu-hover-submenu page-sidebar-menu-compact"
           >
-            <li className="start active">
+            <li className="start">
               <Link className="ajaxify start" to='/'>
                 <i className="icon-home"></i>
                 <span className="title">Dashboard</span>
