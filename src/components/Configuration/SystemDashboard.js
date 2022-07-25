@@ -64,7 +64,7 @@ const SystemDashboard = () => {
             </li>
           </ul>
 
-          <table className="table table-bordered mt-5">
+          <table className="table table-bordered mt-5 mb-5">
             <thead>
               <tr>
                 <th scope="col">Serial</th>
