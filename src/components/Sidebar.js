@@ -66,9 +66,9 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a className="ajaxify" href="subject_setup.php">
+                  <Link className="ajaxify" to="/configuration/subject">
                     Subject
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="javascript:;">
