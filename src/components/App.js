@@ -5,6 +5,7 @@ import Home from './Home';
 import System from './Configuration/System';
 import School from './Configuration/School';
 import Branch from './Configuration/Branch';
+import Position from './Configuration/Position';
 import Department from './Configuration/Department';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path='/configuration/system' element={<System />} />
       <Route path='/configuration/school' element={<School />} />
       <Route path='/configuration/branch' element={<Branch />} />
+      <Route path='/configuration/position' element={<Position />} />
       <Route path='/configuration/department' element={<Department />} />
     </Routes>
   );

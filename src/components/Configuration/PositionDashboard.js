@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Actions from "../Actions";
 
-const DepartmentDashboard = () => {
+const PositionDashboard = () => {
   return (
     <div className="page-content-wrapper">
       <div className="page-content bg-light" style={{ minHeight: "773px" }}>
@@ -20,7 +20,7 @@ const DepartmentDashboard = () => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#!">
-              Department
+              Position
             </a>
           </li>
           <Actions />
@@ -32,7 +32,7 @@ const DepartmentDashboard = () => {
               className="nav-item text-secondary mt-3 mb-4"
               style={{ marginRight: "30px" }}
             >
-              Department
+              Position
             </li>
           </ul>
 
@@ -46,9 +46,9 @@ const DepartmentDashboard = () => {
             </div>
 
             <div className="col-12">
-              <label className="visually-hidden" for="inlineFormInputGroupDepartment">Department</label>
+              <label className="visually-hidden" for="inlineFormInputGroupPosition">Position</label>
               <div className="input-group">
-                <input type="text" className="form-control" id="inlineFormInputGroupDepartment" placeholder="Department" />
+                <input type="text" className="form-control" id="inlineFormInputGroupPosition" placeholder="Position" />
               </div>
             </div>
 
@@ -73,4 +73,4 @@ const DepartmentDashboard = () => {
   );
 };
 
-export default DepartmentDashboard;
+export default PositionDashboard;

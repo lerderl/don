@@ -1,57 +1,25 @@
+import Header from "./Header";
+import Actions from "../Actions";
 import image from "../../image.png";
 
 const SystemDashboard = () => {
   return (
     <div className="page-content-wrapper">
       <div className="page-content bg-light" style={{ minHeight: "773px" }}>
-        <div className="page-content-body" id="page-content-body">
-          <h3 className="page-title">Configuration</h3>
-        </div>
+        <Header />
 
         <ul className="nav tab position-relative">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
+            <a className="nav-link active" aria-current="page" href="#!">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#!">
               Configuration
             </a>
           </li>
-          <button
-            type="button"
-            aria-expanded="false"
-            data-bs-toggle="dropdown"
-            className="btn btn-light dropdown-toggle position-absolute top-0 end-0 dropdown-height"
-          >
-            Actions
-          </button>
-          <ul className="dropdown-menu dropdown-menu-end">
-            <li>
-              <a className="dropdown-item" href="#">
-                Print
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Export to Excel
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Export to Word
-              </a>
-            </li>
-            <li>
-              <hr className="dropdown-divider" />
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Save As
-              </a>
-            </li>
-          </ul>
+          <Actions />
         </ul>
 
         <div className="container tab mt-4">
