@@ -61,6 +61,16 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/styles/toastr.min.css" />
     <link rel="stylesheet" href="%PUBLIC_URL%/styles/typeahead.css" />
     <link rel="stylesheet" href="%PUBLIC_URL%/styles/uniform.default.css" />
+    <link
+      href="bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -213,56 +223,74 @@
         Metronic.init(); // init metronic core components
         Layout.init(); // init current layout
         Demo.init(); // init demo features
-        $('.page-sidebar .ajaxify.start').click() // load the content for the dashboard page.
-        $('#myaccount').click(function (e) {
+        $(".page-sidebar .ajaxify.start").click(); // load the content for the dashboard page.
+        $("#myaccount").click(function (e) {
           e.preventDefault();
           var formURL = $(this).attr("href");
-          $('#page-content-body').load(formURL, function () { });
+          $("#page-content-body").load(formURL, function () {});
         });
-        $('#mycalendar').click(function (e) {
+        $("#mycalendar").click(function (e) {
           e.preventDefault();
           var formURL = $(this).attr("href");
-          $('#page-content-body').load(formURL, function () { });
+          $("#page-content-body").load(formURL, function () {});
         });
-        $('#mynotification').click(function (e) {
+        $("#mynotification").click(function (e) {
           e.preventDefault();
           var formURL = $(this).attr("href");
-          $('#page-content-body').load(formURL, function () { });
+          $("#page-content-body").load(formURL, function () {});
         });
 
         // cache a reference to the countdown element so we don't have to query the DOM for it on each ping.
         var $countdown;
 
-        $('body').append('<div class="modal fade" id="idle-timeout-dialog" data-backdrop="static"><div class="modal-dialog modal-small"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Your session is about to expire.</h4></div><div class="modal-body"><p><i class="fa fa-warning"></i> You session will be locked in <span id="idle-timeout-counter"></span> seconds.</p><p>Do you want to continue your session?</p></div><div class="modal-footer"><button id="idle-timeout-dialog-logout" type="button" class="btn btn-default">No, Logout</button><button id="idle-timeout-dialog-keepalive" type="button" class="btn btn-primary" data-dismiss="modal">Yes, Keep Working</button></div></div></div></div>');
+        $("body").append(
+          '<div class="modal fade" id="idle-timeout-dialog" data-backdrop="static"><div class="modal-dialog modal-small"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Your session is about to expire.</h4></div><div class="modal-body"><p><i class="fa fa-warning"></i> You session will be locked in <span id="idle-timeout-counter"></span> seconds.</p><p>Do you want to continue your session?</p></div><div class="modal-footer"><button id="idle-timeout-dialog-logout" type="button" class="btn btn-default">No, Logout</button><button id="idle-timeout-dialog-keepalive" type="button" class="btn btn-primary" data-dismiss="modal">Yes, Keep Working</button></div></div></div></div>'
+        );
 
         // start the idle timer plugin
-        $.idleTimeout('#idle-timeout-dialog', '.modal-content button:last', {
+        $.idleTimeout("#idle-timeout-dialog", ".modal-content button:last", {
           idleAfter: 60 * 20, // 5 seconds
           timeout: 30000, //30 seconds to timeout
           pollingInterval: 60, // 60 seconds
-          keepAliveURL: 'idletimeout_keepalive.php',
-          serverResponseEquals: 'OK',
+          keepAliveURL: "idletimeout_keepalive.php",
+          serverResponseEquals: "OK",
           onTimeout: function () {
-            window.location = "/ACADEMY/theme/templates/admin2/index.php?doLock=true";
+            window.location =
+              "/ACADEMY/theme/templates/admin2/index.php?doLock=true";
           },
           onIdle: function () {
-            $('#idle-timeout-dialog').modal('show');
-            $countdown = $('#idle-timeout-counter');
+            $("#idle-timeout-dialog").modal("show");
+            $countdown = $("#idle-timeout-counter");
 
-            $('#idle-timeout-dialog-keepalive').on('click', function () {
-              $('#idle-timeout-dialog').modal('hide');
+            $("#idle-timeout-dialog-keepalive").on("click", function () {
+              $("#idle-timeout-dialog").modal("hide");
             });
 
-            $('#idle-timeout-dialog-logout').on('click', function () {
-              $('#idle-timeout-dialog').modal('hide');
+            $("#idle-timeout-dialog-logout").on("click", function () {
+              $("#idle-timeout-dialog").modal("hide");
               $.idleTimeout.options.onTimeout.call(this);
             });
           },
           onCountdown: function (counter) {
             $countdown.html(counter); // update the counter
-          }
+          },
         });
       });
     </script>
+    <script
+      src="bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+    <script type="text/javascript">
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </body>
 </html>

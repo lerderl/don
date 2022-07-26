@@ -9,17 +9,17 @@ const SchoolDashboard = () => {
 
         <ul className="nav tab position-relative">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
+            <a className="nav-link active" aria-current="page" href="#!">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#!">
               Configuration
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#!">
               School
             </a>
           </li>
@@ -75,9 +75,9 @@ const SchoolDashboard = () => {
                 <td>Mr.Don Schools</td>
                 <td>001</td>
                 <td>
-                  <button type="button" className="btn btn-link">Edit</button>
+                  <button type="button" className="btn btn-link" style={{ marginRight: "15px" }}>Edit</button>
                   <div className="vr"></div>
-                  <button type="button" className="btn btn-link">Delete</button>
+                  <button type="button" className="btn btn-link" style={{ marginLeft: "15px" }}>Delete</button>
                 </td>
               </tr>
             </tbody>

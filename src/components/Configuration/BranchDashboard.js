@@ -9,17 +9,17 @@ const BranchDashboard = () => {
 
         <ul className="nav tab position-relative">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
+            <a className="nav-link active" aria-current="page" href="#!">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#!">
               Configuration
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#!">
               Branch
             </a>
           </li>

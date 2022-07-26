@@ -38,35 +38,25 @@ const PrefectsDashboard = () => {
 
           <form className="row row-cols-lg-auto g-3 align-items-center mt-2">
             <div className="col-12">
-              <label htmlFor="exampleDataList" className="form-label visually-hidden">Datalist example</label>
-              <input className="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search category..." />
+              <label
+                htmlFor="exampleDataList"
+                className="form-label visually-hidden"
+              >
+                Datalist example
+              </label>
+              <input
+                className="form-control"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Type to search category..."
+              />
               <datalist id="datalistOptions">
-                <option value="School" />
+                <option value="Club" />
                 <option value="Class" />
                 <option value="Sport" />
-                <option value="Club" />
+                <option value="School" />
                 <option value="Fellowship" />
-              </datalist>
-            </div>
-
-            <div className="col-12">
-              <label htmlFor="exampleDataList" className="form-label visually-hidden">Datalist example</label>
-              <input className="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search sub-category..." />
-              <datalist id="datalistOptions">
                 <option value="No matches found" />
-              </datalist>
-            </div>
-
-            <div className="col-12">
-              <button type="submit" className="btn btn-light">Cancel</button>
-            </div>
-          </form>
-
-          <form className="row row-cols-lg-auto g-3 align-items-center mt-0 mb-4">
-            <div className="col-12">
-              <label htmlFor="exampleDataList" className="form-label visually-hidden">Datalist example</label>
-              <input className="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search student..." />
-              <datalist id="datalistOptions">
                 <option value="GBADE SEGUN - 0003" />
                 <option value="OKEKE ISAAC - 0007" />
                 <option value="ISHAM DOKAR - 0010" />
@@ -74,14 +64,64 @@ const PrefectsDashboard = () => {
             </div>
 
             <div className="col-12">
-              <label className="visually-hidden" for="inlineFormInputGroupPosition">Position</label>
+              <label
+                htmlFor="exampleDataList"
+                className="form-label visually-hidden"
+              >
+                Datalist example
+              </label>
+              <input
+                className="form-control"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Type to search sub-category..."
+              />
+            </div>
+
+            <div className="col-12">
+              <button type="submit" className="btn btn-light">
+                Cancel
+              </button>
+            </div>
+          </form>
+
+          <form className="row row-cols-lg-auto g-3 align-items-center mt-0 mb-4">
+            <div className="col-12">
+              <label
+                htmlFor="exampleDataList"
+                className="form-label visually-hidden"
+              >
+                Datalist example
+              </label>
+              <input
+                className="form-control"
+                list="datalistOptions"
+                id="exampleDataList"
+                placeholder="Type to search student..."
+              />
+            </div>
+
+            <div className="col-12">
+              <label
+                className="visually-hidden"
+                for="inlineFormInputGroupPosition"
+              >
+                Position
+              </label>
               <div className="input-group">
-                <input type="text" className="form-control" id="inlineFormInputGroupPosition" placeholder="Position" />
+                <input
+                  type="text"
+                  className="form-control"
+                  id="inlineFormInputGroupPosition"
+                  placeholder="Position"
+                />
               </div>
             </div>
 
             <div className="col-12">
-              <button type="submit" className="btn btn-success">Submit</button>
+              <button type="submit" className="btn btn-success">
+                Submit
+              </button>
             </div>
           </form>
         </div>

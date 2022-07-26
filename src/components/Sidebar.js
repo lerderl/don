@@ -56,9 +56,9 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a className="ajaxify" href="academic_year.php">
+                  <Link className="ajaxify" to="/configuration/academic_year">
                     Academic Year
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="ajaxify" href="class_setup.php">

@@ -8,6 +8,7 @@ import Branch from './Configuration/Branch';
 import Position from './Configuration/Position';
 import Prefects from './Configuration/Prefects';
 import Department from './Configuration/Department';
+import AcademicYear from './Configuration/AcademicYear';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/configuration/position' element={<Position />} />
       <Route path='/configuration/prefects' element={<Prefects />} />
       <Route path='/configuration/department' element={<Department />} />
+      <Route path='/configuration/academic_year' element={<AcademicYear />} />
     </Routes>
   );
 }

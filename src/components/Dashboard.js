@@ -72,16 +72,16 @@ const Dashboard = () => {
                   CALENDAR
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled">TODAY</a>
+                  <a className="nav-link disabled" href="#!">TODAY</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">MONTH</a>
+                  <a className="nav-link active" aria-current="page" href="#!">MONTH</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">WEEK</a>
+                  <a className="nav-link" href="#!">WEEK</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">DAY</a>
+                  <a className="nav-link" href="#!">DAY</a>
                 </li>
               </ul>
               <ul className="nav nav-tabs">
@@ -89,10 +89,10 @@ const Dashboard = () => {
                   NOTICE BOARD
                 </li>
                 <li className="nav-item" style={{  marginLeft: "90px" }}>
-                  <a className="nav-link active" aria-current="page" href="#">School</a>
+                  <a className="nav-link active" aria-current="page" href="#!">School</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Personal</a>
+                  <a className="nav-link" href="#!">Personal</a>
                 </li>
               </ul>
             </div>
