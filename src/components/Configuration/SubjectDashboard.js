@@ -138,35 +138,6 @@ const SubjectDashboard = () => {
               </button>
             </div>
           </form>
-
-          <table className="table table-bordered mt-5 mb-5">
-            <thead>
-              <tr>
-                <th scope="col">Serial</th>
-                <th scope="col">Class</th>
-                <th scope="col">Group</th>
-                <th scope="col">Order</th>
-                <th scope="col">Class Teacher</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  {/* <button type="button" className="btn btn-link" style={{ marginRight: "15px" }}>Edit</button> */}
-                  <div className="vr" style={{ marginLeft: "60px" }}></div>
-                  {/* <button type="button" className="btn btn-link" style={{ marginLeft: "15px", marginRight: "15px" }}>Delete</button>
-                  <div className="vr"></div>
-                  <button type="button" className="btn btn-success" style={{ marginLeft: "15px" }}>Activated</button> */}
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
