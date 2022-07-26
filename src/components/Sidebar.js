@@ -36,9 +36,9 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a className="ajaxify" href="branch_setup.php">
+                  <Link className="ajaxify" to="/configuration/branch">
                     Branch
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="ajaxify" href="department_setup.php">

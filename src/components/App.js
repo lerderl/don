@@ -4,6 +4,7 @@ import '../App.css';
 import Home from './Home';
 import System from './Configuration/System';
 import School from './Configuration/School';
+import Branch from './Configuration/Branch';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path='/' exact element={<Home />} />
       <Route path='/configuration/system' element={<System />} />
       <Route path='/configuration/school' element={<School />} />
+      <Route path='/configuration/branch' element={<Branch />} />
     </Routes>
   );
 }
