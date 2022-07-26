@@ -90,7 +90,9 @@ const SystemDashboard = () => {
                     className="btn-close"
                     aria-label="Close"
                   ></button>
-                  <img src={image} alt="" width="24" />
+                  <p>
+                    <img src={image} alt="" width="24" />
+                  </p>
                 </td>
                 <td>
                   <button

@@ -41,9 +41,9 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a className="ajaxify" href="department_setup.php">
+                  <Link className="ajaxify" to="/configuration/department">
                     Department
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="ajaxify" href="position_setup.php">
