@@ -71,16 +71,16 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href="#!">
                     <span className="title">Curriculum</span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
                   </a>
                   <ul className="sub-menu">
                     <li>
-                      <a className="ajaxify" href="syllabus_setup.php">
+                      <Link className="ajaxify" to="/configuration/curriculum/scheme-of-work">
                         Scheme of Work
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a className="ajaxify" href="lesson_note.php">
