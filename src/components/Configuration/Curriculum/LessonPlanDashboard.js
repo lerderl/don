@@ -169,12 +169,11 @@ const LessonPlanDashboard = () => {
                     <li className="dropdown">
                       <a
                         className="btn default dropdown-toggle"
-                        data-toggle="dropdown"
+                        data-bs-toggle="dropdown"
                         href="#!"
                       >
                         <i className="icon-font"></i>&nbsp;
                         <span className="current-font">Normal text</span>&nbsp;
-                        <b className="caret"></b>
                       </a>
 
                       <ul className="dropdown-menu">

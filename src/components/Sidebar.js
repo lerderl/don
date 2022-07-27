@@ -62,7 +62,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                   <Link className="ajaxify" to="/configuration/class">
-                    className
+                    Class
                   </Link>
                 </li>
                 <li>
@@ -90,16 +90,16 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Timetable</span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
                   </a>
                   <ul className="sub-menu">
                     <li>
-                      <a className="ajaxify" href="class_timetable.php">
-                        className Timetable
-                      </a>
+                      <Link className="ajaxify" to="/configuration/timetable/class">
+                        Class Timetable
+                      </Link>
                     </li>
                     <li>
                       <a className="ajaxify" href="exam_timetable.php">
