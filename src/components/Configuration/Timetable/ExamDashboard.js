@@ -1,20 +1,9 @@
-import { useState } from "react";
-// import Stack from '@mui/material/Stack';
-// import TimePicker from '@mui/lab/TimePicker';
-// import TextField from '@mui/material/TextField';
-// import AdapterDateFns from '@mui/lab/AdapterDateFns';
-// import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import Form from "react-bootstrap/Form";
 
 import Header from "../Header";
 import Actions from "../../Actions";
 
-const ClassDashboard = () => {
-  const [value, setValue] = useState(new Date());
-
-  const handleChange = newValue => {
-    setValue(newValue);
-  };
-
+const ExamDashboard = () => {
   return (
     <div className="page-content-wrapper">
       <div className="page-content bg-light" style={{ minHeight: "773px" }}>
@@ -38,7 +27,7 @@ const ClassDashboard = () => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#!">
-              Class Timetable
+              Exam Timetable
             </a>
           </li>
           <Actions />
@@ -50,7 +39,7 @@ const ClassDashboard = () => {
               className="nav-item text-secondary mt-3 mb-4"
               style={{ marginRight: "30px" }}
             >
-              Class Timetable
+              Exam Timetable
             </li>
           </ul>
 
@@ -80,43 +69,22 @@ const ClassDashboard = () => {
             </div>
 
             <div className="col-12">
-              <label
-                htmlFor="exampleDataList"
-                className="form-label visually-hidden"
-              >
-                Datalist example
-              </label>
-              <input
-                className="form-control"
-                list="datalistOptions"
-                id="exampleDataList"
-                placeholder="Type to search day..."
-              />
+              <label className="fs-6">Date</label>
+              <Form.Control type="date" style={{ width: "160px", height: "20px" }}></Form.Control>
             </div>
 
-            <div className="col-12">
-              {/* <LocalizationProvider dateAdapter={AdapterDateFns}>
-                <Stack spacing={3}>
-                  <TimePicker
-                    value={value}
-                    label="Start Period"
-                    onChange={handleChange}
-                    className="form-control"
-                    renderInput={params => <TextField {...params} />}
-                  />
-                </Stack>
-              </LocalizationProvider> */}
-              
+            <div className="col-12">              
               <label className="visually-hidden" for="inlineFormInputGroupStartPeriod">Start Period</label>
               <div className="input-group">
                 <input type="text" className="form-control" id="inlineFormInputGroupStartPeriod" placeholder="Start Period" />
               </div>
             </div>
 
-            <div className="col-12">
-              <button type="submit" className="btn btn-light">
-                Cancel
-              </button>
+            <div className="col-12">              
+              <label className="visually-hidden" for="inlineFormInputGroupInvigilators">Invigilators</label>
+              <div className="input-group">
+                <input type="text" className="form-control" id="inlineFormInputGroupInvigilators" placeholder="Invigilators" />
+              </div>
             </div>
           </form>
 
@@ -159,6 +127,12 @@ const ClassDashboard = () => {
             </div>
 
             <div className="col-12">
+              <button type="submit" className="btn btn-light">
+                Cancel
+              </button>
+            </div>
+
+            <div className="col-12">
               <button type="submit" className="btn btn-success">
                 Submit
               </button>
@@ -170,4 +144,4 @@ const ClassDashboard = () => {
   );
 };
 
-export default ClassDashboard;
+export default ExamDashboard;

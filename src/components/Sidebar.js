@@ -102,14 +102,14 @@ const Sidebar = () => {
                       </Link>
                     </li>
                     <li>
-                      <a className="ajaxify" href="exam_timetable.php">
+                      <Link className="ajaxify" to="/configuration/timetable/exam">
                         Exam Timetable
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Event</span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
