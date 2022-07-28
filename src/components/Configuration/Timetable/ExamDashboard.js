@@ -60,11 +60,6 @@ const ExamDashboard = () => {
               <datalist id="datalistOptions">
                 <option value="MAGODO" />
                 <option value="MAGBORO" />
-                <option value="Monday" />
-                <option value="Tuesday" />
-                <option value="Wednesday" />
-                <option value="Thursday" />
-                <option value="Friday" />
               </datalist>
             </div>
 

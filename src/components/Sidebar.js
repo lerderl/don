@@ -116,9 +116,9 @@ const Sidebar = () => {
                   </a>
                   <ul className="sub-menu">
                     <li>
-                      <a className="ajaxify" href="school_calender.php">
-                        School Calender
-                      </a>
+                      <Link className="ajaxify" to="/configuration/event/school">
+                        School Calendar
+                      </Link>
                     </li>
                     <li>
                       <a className="ajaxify" href="school_notification.php">
@@ -133,7 +133,7 @@ const Sidebar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Extra Activities </span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
