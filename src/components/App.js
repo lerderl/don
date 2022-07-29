@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 
 import '../App.css';
 import Home from './Home';
+
+// Configuration imports
 import Class from './configuration/Class';
 import System from './configuration/System';
 import School from './configuration/School';
@@ -22,10 +24,15 @@ import ExamTimetable from './configuration/timetable/ExamTimetable';
 import ClassTimetable from './configuration/timetable/ClassTimetable';
 import SchoolNotification from './configuration/event/SchoolNotification';
 
+// Student imports
+import AddStudent from './student/admission/AddStudent';
+
 function App() {
   return (
     <Routes>
       <Route path='/' exact element={<Home />} />
+
+      {/* Configuration routes */}
       <Route path='/configuration/class' element={<Class />} />
       <Route path='/configuration/system' element={<System />} />
       <Route path='/configuration/school' element={<School />} />
@@ -45,6 +52,9 @@ function App() {
       <Route path='/configuration/event/school_calendar' element={<SchoolCalendar />} />
       <Route path='/configuration/curriculum/scheme_of_work' element={<SchemeOfWork />} />
       <Route path='/configuration/event/school_notification' element={<SchoolNotification />} />
+
+      {/* Student routes */}
+      <Route path='/student/admission/add_student' element={<AddStudent />} />
     </Routes>
   );
 }
