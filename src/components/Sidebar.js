@@ -128,9 +128,9 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a className="ajaxify" href="library_setup.php">
+                  <Link className="ajaxify" to="/configuration/library">
                     Library
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href=":;">
@@ -140,9 +140,9 @@ const Sidebar = () => {
                   </a>
                   <ul className="sub-menu">
                     <li>
-                      <a className="ajaxify" href="sport_setup.php">
+                      <Link className="ajaxify" to="/configuration/extra/sport">
                         Sport
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a className="ajaxify" href="club_setup.php">

@@ -157,11 +157,7 @@ const ClassDashboard = () => {
                 <td></td>
                 <td></td>
                 <td>
-                  {/* <button type="button" className="btn btn-link" style={{ marginRight: "15px" }}>Edit</button> */}
                   <div className="vr" style={{ marginLeft: "60px" }}></div>
-                  {/* <button type="button" className="btn btn-link" style={{ marginLeft: "15px", marginRight: "15px" }}>Delete</button>
-                  <div className="vr"></div>
-                  <button type="button" className="btn btn-success" style={{ marginLeft: "15px" }}>Activated</button> */}
                 </td>
               </tr>
             </tbody>

@@ -2,21 +2,23 @@ import { Route, Routes } from 'react-router-dom';
 
 import '../App.css';
 import Home from './Home';
-import Class from './Configuration/Class';
-import System from './Configuration/System';
-import School from './Configuration/School';
-import Branch from './Configuration/Branch';
-import Subject from './Configuration/Subject';
-import Position from './Configuration/Position';
-import Prefects from './Configuration/Prefects';
-import Department from './Configuration/Department';
-import AcademicYear from './Configuration/AcademicYear';
-import LessonPlan from './Configuration/Curriculum/LessonPlan';
-import SchoolCalendar from './Configuration/Event/SchoolCalendar';
-import SchemeOfWork from './Configuration/Curriculum/SchemeOfWork';
-import ExamTimetable from './Configuration/Timetable/ExamTimetable';
-import ClassTimetable from './Configuration/Timetable/ClassTimetable';
-import SchoolNotification from './Configuration/Event/SchoolNotification';
+import Class from './configuration/Class';
+import System from './configuration/System';
+import School from './configuration/School';
+import Branch from './configuration/Branch';
+import Library from './configuration/Library';
+import Subject from './configuration/Subject';
+import Position from './configuration/Position';
+import Prefects from './configuration/Prefects';
+import Sport from './configuration/extra/Sport';
+import Department from './configuration/Department';
+import AcademicYear from './configuration/AcademicYear';
+import LessonPlan from './configuration/curriculum/LessonPlan';
+import SchoolCalendar from './configuration/event/SchoolCalendar';
+import SchemeOfWork from './configuration/curriculum/SchemeOfWork';
+import ExamTimetable from './configuration/timetable/ExamTimetable';
+import ClassTimetable from './configuration/timetable/ClassTimetable';
+import SchoolNotification from './configuration/event/SchoolNotification';
 
 function App() {
   return (
@@ -26,9 +28,11 @@ function App() {
       <Route path='/configuration/system' element={<System />} />
       <Route path='/configuration/school' element={<School />} />
       <Route path='/configuration/branch' element={<Branch />} />
+      <Route path='/configuration/library' element={<Library />} />
       <Route path='/configuration/subject' element={<Subject />} />
       <Route path='/configuration/position' element={<Position />} />
       <Route path='/configuration/prefects' element={<Prefects />} />
+      <Route path='/configuration/extra/sport' element={<Sport />} />
       <Route path='/configuration/department' element={<Department />} />
       <Route path='/configuration/academic_year' element={<AcademicYear />} />
       <Route path='/configuration/timetable/exam' element={<ExamTimetable />} />
