@@ -14,6 +14,7 @@ import Prefects from './configuration/Prefects';
 import Sport from './configuration/extra/Sport';
 import Department from './configuration/Department';
 import AcademicYear from './configuration/AcademicYear';
+import Fellowship from './configuration/extra/Fellowship';
 import LessonPlan from './configuration/curriculum/LessonPlan';
 import SchoolCalendar from './configuration/event/SchoolCalendar';
 import SchemeOfWork from './configuration/curriculum/SchemeOfWork';
@@ -37,6 +38,7 @@ function App() {
       <Route path='/configuration/extra/sport' element={<Sport />} />
       <Route path='/configuration/department' element={<Department />} />
       <Route path='/configuration/academic_year' element={<AcademicYear />} />
+      <Route path='/configuration/extra/fellowship' element={<Fellowship />} />
       <Route path='/configuration/timetable/exam' element={<ExamTimetable />} />
       <Route path='/configuration/timetable/class' element={<ClassTimetable />} />
       <Route path='/configuration/curriculum/lesson_plan' element={<LessonPlan />} />

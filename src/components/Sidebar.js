@@ -150,16 +150,16 @@ const Sidebar = () => {
                       </Link>
                     </li>
                     <li>
-                      <a className="ajaxify" href="fellowship_setup.php">
+                      <Link className="ajaxify" to="/configuration/extra/fellowship">
                         Fellowship
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-user"></i>
                 <span className="title">Student </span>
                 <span className="selected"></span>
