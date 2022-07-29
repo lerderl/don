@@ -6,6 +6,7 @@ import Class from './configuration/Class';
 import System from './configuration/System';
 import School from './configuration/School';
 import Branch from './configuration/Branch';
+import Club from './configuration/extra/Club';
 import Library from './configuration/Library';
 import Subject from './configuration/Subject';
 import Position from './configuration/Position';
@@ -28,6 +29,7 @@ function App() {
       <Route path='/configuration/system' element={<System />} />
       <Route path='/configuration/school' element={<School />} />
       <Route path='/configuration/branch' element={<Branch />} />
+      <Route path='/configuration/extra/club' element={<Club />} />
       <Route path='/configuration/library' element={<Library />} />
       <Route path='/configuration/subject' element={<Subject />} />
       <Route path='/configuration/position' element={<Position />} />

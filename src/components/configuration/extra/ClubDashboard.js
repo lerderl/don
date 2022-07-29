@@ -1,7 +1,7 @@
 import Header from "../Header";
 import Actions from "../../Actions";
 
-const SportDashboard = () => {
+const ClubDashboard = () => {
   return (
     <div className="page-content-wrapper">
       <div className="page-content bg-light" style={{ minHeight: "773px" }}>
@@ -25,7 +25,7 @@ const SportDashboard = () => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#!">
-              Sport
+              Club
             </a>
           </li>
           <Actions />
@@ -37,7 +37,7 @@ const SportDashboard = () => {
               className="nav-item text-secondary mt-3 mb-4"
               style={{ marginRight: "30px" }}
             >
-              Sport
+              Club
             </li>
           </ul>
 
@@ -45,16 +45,16 @@ const SportDashboard = () => {
             <div className="col-12">
               <label
                 className="visually-hidden"
-                for="inlineFormInputGroupSport"
+                for="inlineFormInputGroupClub"
               >
-                Sport
+                Club
               </label>
               <div className="input-group">
                 <input
                   type="text"
                   className="form-control"
-                  id="inlineFormInputGroupSport"
-                  placeholder="Sport"
+                  id="inlineFormInputGroupClub"
+                  placeholder="Club"
                 />
               </div>
             </div>
@@ -81,13 +81,13 @@ const SportDashboard = () => {
                 htmlFor="exampleDataList"
                 className="form-label visually-hidden"
               >
-                Sport Master
+                Club Master
               </label>
               <input
                 className="form-control"
                 list="datalistOptions"
                 id="exampleDataList"
-                placeholder="Type to search sport master..."
+                placeholder="Type to search club master..."
               />
               <datalist id="datalistOptions">
                 <option value="OBRIGHT JASON - 0001" />
@@ -113,9 +113,9 @@ const SportDashboard = () => {
             <thead>
               <tr>
                 <th scope="col">Serial</th>
-                <th scope="col">Sport</th>
+                <th scope="col">Club</th>
                 <th scope="col">Group</th>
-                <th scope="col">Sport Master</th>
+                <th scope="col">Club Master</th>
                 <th scope="col">Action</th>
               </tr>
             </thead>
@@ -137,4 +137,4 @@ const SportDashboard = () => {
   );
 };
 
-export default SportDashboard;
+export default ClubDashboard;
