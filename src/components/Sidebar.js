@@ -116,14 +116,14 @@ const Sidebar = () => {
                   </a>
                   <ul className="sub-menu">
                     <li>
-                      <Link className="ajaxify" to="/configuration/event/school">
+                      <Link className="ajaxify" to="/configuration/event/school_calendar">
                         School Calendar
                       </Link>
                     </li>
                     <li>
-                      <a className="ajaxify" href="school_notification.php">
+                      <Link className="ajaxify" to="/configuration/event/school_notification">
                         School Notification
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>

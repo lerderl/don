@@ -16,6 +16,7 @@ import SchoolCalendar from './Configuration/Event/SchoolCalendar';
 import SchemeOfWork from './Configuration/Curriculum/SchemeOfWork';
 import ExamTimetable from './Configuration/Timetable/ExamTimetable';
 import ClassTimetable from './Configuration/Timetable/ClassTimetable';
+import SchoolNotification from './Configuration/Event/SchoolNotification';
 
 function App() {
   return (
@@ -30,11 +31,12 @@ function App() {
       <Route path='/configuration/prefects' element={<Prefects />} />
       <Route path='/configuration/department' element={<Department />} />
       <Route path='/configuration/academic_year' element={<AcademicYear />} />
-      <Route path='/configuration/event/school' element={<SchoolCalendar />} />
       <Route path='/configuration/timetable/exam' element={<ExamTimetable />} />
       <Route path='/configuration/timetable/class' element={<ClassTimetable />} />
       <Route path='/configuration/curriculum/lesson_plan' element={<LessonPlan />} />
+      <Route path='/configuration/event/school_calendar' element={<SchoolCalendar />} />
       <Route path='/configuration/curriculum/scheme_of_work' element={<SchemeOfWork />} />
+      <Route path='/configuration/event/school_notification' element={<SchoolNotification />} />
     </Routes>
   );
 }
