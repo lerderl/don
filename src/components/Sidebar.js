@@ -228,9 +228,9 @@ const Sidebar = () => {
                       </Link>
                     </li>
                     <li>
-                      <a className="ajaxify" href="student_attendance.php">
-                        Student Attendance{" "}
-                      </a>
+                      <Link className="ajaxify" to="/student/files/attendance">
+                        Student Attendance
+                      </Link>
                     </li>
                     <li>
                       <a className="ajaxify" href="student_medical.php">

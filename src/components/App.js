@@ -29,6 +29,7 @@ import Remark from './student/files/Remark';
 import Result from './student/files/Result';
 import Vocation from './student/files/Vocation';
 import Behaviour from './student/files/Behaviour';
+import Attendance from './student/files/Attendance';
 import AddStudent from './student/admission/AddStudent';
 import NewStudent from './student/admission/NewStudent';
 import ActiveStudent from './student/admission/ActiveStudent';
@@ -65,6 +66,7 @@ function App() {
       <Route path='/student/files/result' element={<Result />} />
       <Route path='/student/files/vocation' element={<Vocation />} />
       <Route path='/student/files/behaviour' element={<Behaviour />} />
+      <Route path='/student/files/attendance' element={<Attendance />} />
       <Route path='/student/admission/add_student' element={<AddStudent />} />
       <Route path='/student/admission/new_student' element={<NewStudent />} />
       <Route path='/student/admission/active_student' element={<ActiveStudent />} />
