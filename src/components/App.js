@@ -27,6 +27,7 @@ import SchoolNotification from './configuration/event/SchoolNotification';
 // Student imports
 import Result from './student/files/Result';
 import Vocation from './student/files/Vocation';
+import Behaviour from './student/files/Behaviour';
 import AddStudent from './student/admission/AddStudent';
 import NewStudent from './student/admission/NewStudent';
 import ActiveStudent from './student/admission/ActiveStudent';
@@ -61,6 +62,7 @@ function App() {
       {/* Student routes */}
       <Route path='/student/files/result' element={<Result />} />
       <Route path='/student/files/vocation' element={<Vocation />} />
+      <Route path='/student/files/behaviour' element={<Behaviour />} />
       <Route path='/student/admission/add_student' element={<AddStudent />} />
       <Route path='/student/admission/new_student' element={<NewStudent />} />
       <Route path='/student/admission/active_student' element={<ActiveStudent />} />
