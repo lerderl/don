@@ -1,8 +1,5 @@
-import Form from "react-bootstrap/Form";
-
 import Header from "../Header";
 import Actions from "../../Actions";
-import image from "../../../image.png";
 
 const NewStudentDashboard = () => {
   return (
