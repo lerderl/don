@@ -189,9 +189,9 @@ const Sidebar = () => {
                       </Link>
                     </li>
                     <li>
-                      <a className="ajaxify" href="withdrawn_students.php">
-                        Inactive Students{" "}
-                      </a>
+                      <Link className="ajaxify" to="/student/admission/inactive_student">
+                        Inactive Students
+                      </Link>
                     </li>
                   </ul>
                 </li>

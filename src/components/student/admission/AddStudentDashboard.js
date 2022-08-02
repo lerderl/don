@@ -195,14 +195,15 @@ const AddStudentDashboard = () => {
               </div>
             </div>
 
-            <div className="mb-5" style={{ marginLeft: "133px" }}>
+            <div className="row">
+              <label for="inputButton" className="col-sm-2 col-form-label"></label>
               <div className="col-sm-3 mt-3 mb-3">
                 <button type="submit" className="btn btn-light" style={{ width: "60px", height: "36px" }}>Cancel</button>
                 <button type="submit" className="btn btn-success" style={{ marginLeft: "5px", width: "60px", height: "36px" }}>Submit</button>
               </div>
-              <label for="inputHome" className="col-sm-2 col-form-label" style={{ marginLeft: "175px" }}>Home Address</label>
-              <div className="col-sm-3" style={{ marginLeft: "26px" }}>
-                <input type="text" className="form-control" id="inputHome" style={{ width: "208px" }} />
+              <label for="inputHome" className="col-sm-2 col-form-label" style={{ marginLeft: "140px" }}>Home Address</label>
+              <div className="col-sm-3">
+                <input type="text" className="form-control" id="inputHome" />
               </div>
             </div>
           </form>

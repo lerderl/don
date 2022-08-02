@@ -28,6 +28,7 @@ import SchoolNotification from './configuration/event/SchoolNotification';
 import AddStudent from './student/admission/AddStudent';
 import NewStudent from './student/admission/NewStudent';
 import ActiveStudent from './student/admission/ActiveStudent';
+import InactiveStudent from './student/admission/InactiveStudent';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
       <Route path='/student/admission/add_student' element={<AddStudent />} />
       <Route path='/student/admission/new_student' element={<NewStudent />} />
       <Route path='/student/admission/active_student' element={<ActiveStudent />} />
+      <Route path='/student/admission/inactive_student' element={<InactiveStudent />} />
     </Routes>
   );
 }

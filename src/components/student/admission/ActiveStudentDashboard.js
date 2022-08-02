@@ -79,7 +79,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginRight: "15px" }}
                   >
                     View
                   </button>
@@ -87,7 +86,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px", marginRight: "15px" }}
                   >
                     Delete
                   </button>
@@ -95,7 +93,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px" }}
                   >
                     Archive
                   </button>
@@ -104,7 +101,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginRight: "15px" }}
                   >
                     <i className="fa fa-phone"></i>
                   </button>
@@ -112,7 +108,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px", marginRight: "15px" }}
                   >
                     <i className="fa fa-envelope-o"></i>
                   </button>
@@ -120,7 +115,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px" }}
                   >
                     <i className="fa fa-minus-circle"></i>
                   </button>
@@ -138,7 +132,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginRight: "15px" }}
                   >
                     View
                   </button>
@@ -146,7 +139,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px", marginRight: "15px" }}
                   >
                     Delete
                   </button>
@@ -154,7 +146,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px" }}
                   >
                     Archive
                   </button>
@@ -163,7 +154,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginRight: "15px" }}
                   >
                     <i className="fa fa-phone"></i>
                   </button>
@@ -171,7 +161,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px", marginRight: "15px" }}
                   >
                     <i className="fa fa-envelope-o"></i>
                   </button>
@@ -179,7 +168,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px" }}
                   >
                     <i className="fa fa-minus-circle"></i>
                   </button>
@@ -197,7 +185,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginRight: "15px" }}
                   >
                     View
                   </button>
@@ -205,7 +192,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px", marginRight: "15px" }}
                   >
                     Delete
                   </button>
@@ -213,7 +199,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px" }}
                   >
                     Archive
                   </button>
@@ -222,7 +207,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginRight: "15px" }}
                   >
                     <i className="fa fa-phone"></i>
                   </button>
@@ -230,7 +214,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px", marginRight: "15px" }}
                   >
                     <i className="fa fa-envelope-o"></i>
                   </button>
@@ -238,7 +221,6 @@ const ActiveStudentDashboard = () => {
                   <button
                     type="button"
                     className="btn btn-link"
-                    // style={{ marginLeft: "15px" }}
                   >
                     <i className="fa fa-minus-circle"></i>
                   </button>
