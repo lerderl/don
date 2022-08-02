@@ -196,7 +196,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Files </span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
@@ -204,13 +204,13 @@ const Sidebar = () => {
                   <ul className="sub-menu">
                     <li>
                       <a className="ajaxify" href="student_biometric.php">
-                        Student Biometric{" "}
+                        Student Biometric
                       </a>
                     </li>
                     <li>
-                      <a className="ajaxify" href="student_vocation.php">
-                        Student Vocation{" "}
-                      </a>
+                      <Link className="ajaxify" to="/student/files/vocation">
+                        Student Vocation
+                      </Link>
                     </li>
                     <li>
                       <a className="ajaxify" href="student_result.php">
