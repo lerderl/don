@@ -33,6 +33,7 @@ import Behaviour from './student/files/Behaviour';
 import Attendance from './student/files/Attendance';
 import AddStudent from './student/admission/AddStudent';
 import NewStudent from './student/admission/NewStudent';
+import StudentLibrary from './student/files/StudentLibrary';
 import ActiveStudent from './student/admission/ActiveStudent';
 import InactiveStudent from './student/admission/InactiveStudent';
 
@@ -69,6 +70,7 @@ function App() {
       <Route path='/student/files/vocation' element={<Vocation />} />
       <Route path='/student/files/behaviour' element={<Behaviour />} />
       <Route path='/student/files/attendance' element={<Attendance />} />
+      <Route path='/student/files/library' element={<StudentLibrary />} />
       <Route path='/student/admission/add_student' element={<AddStudent />} />
       <Route path='/student/admission/new_student' element={<NewStudent />} />
       <Route path='/student/admission/active_student' element={<ActiveStudent />} />
