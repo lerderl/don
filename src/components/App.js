@@ -27,6 +27,7 @@ import SchoolNotification from './configuration/event/SchoolNotification';
 // Student imports
 import Remark from './student/files/Remark';
 import Result from './student/files/Result';
+import Travel from './student/files/Travel';
 import Medical from './student/files/Medical';
 import Vocation from './student/files/Vocation';
 import Behaviour from './student/files/Behaviour';
@@ -66,6 +67,7 @@ function App() {
       {/* Student routes */}
       <Route path='/student/files/remark' element={<Remark />} />
       <Route path='/student/files/result' element={<Result />} />
+      <Route path='/student/files/travel' element={<Travel />} />
       <Route path='/student/files/medical' element={<Medical />} />
       <Route path='/student/files/vocation' element={<Vocation />} />
       <Route path='/student/files/behaviour' element={<Behaviour />} />
