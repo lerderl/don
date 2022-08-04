@@ -1,9 +1,9 @@
 import Form from "react-bootstrap/Form";
 
-import Header from "../Header";
-import Actions from "../../Actions";
+import Header from '../../Header';
+import Actions from '../../../Actions';
 
-const DisciplineDashboard = () => {
+const PaymentsDashboard = () => {
   return (
     <div className="page-content-wrapper">
       <div className="page-content bg-light" style={{ minHeight: "773px" }}>
@@ -22,12 +22,17 @@ const DisciplineDashboard = () => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#!">
-              Files
+              Task
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#!">
-              Student Discipline
+              Fees
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#!">
+              Fee Payments
             </a>
           </li>
           <Actions />
@@ -39,14 +44,19 @@ const DisciplineDashboard = () => {
               className="nav-item text-secondary mt-3 mb-4"
               style={{ marginRight: "30px" }}
             >
-              Student Discipline
+              Fee Payments
             </li>
           </ul>
 
           <form className="row row-cols-lg-auto g-3 align-items-center mt-2">
             <div className="col-12">
-              <label htmlFor="inputStudent" className="form-label visually-hidden">Student</label>
-              <select className="form-select" style={{ height: "36px", width: "138px" }} id="autoSizingSelect">
+              <label
+                htmlFor="student"
+                className="form-label visually-hidden"
+              >
+                Student
+              </label>
+              <select className="form-control form-select" style={{ height: "36px", width: "138px" }} id="autoSizingSelect">
                 <option selected>Student</option>
                 <option value="1">GBADE SEGUN - 0003</option>
                 <option value="2">FIRSTJOHN JOSH - 0006</option>
@@ -55,16 +65,33 @@ const DisciplineDashboard = () => {
             </div>
 
             <div className="col-12">
-              <label className="visually-hidden" htmlFor="inlineFormInputGroupOffense">Offense</label>
-              <div className="input-group">
-                <input type="text" className="form-control" id="inlineFormInputGroupOffense" placeholder="Offense" />
-              </div>
-            </div>                      
+              <label
+                htmlFor="feeGroup"
+                className="form-label visually-hidden"
+              >
+                Fee Group
+              </label>
+              <select className="form-control form-select" style={{ height: "36px", width: "138px" }} id="autoSizingSelect">
+                <option selected>Fees</option>
+                <option value="1">No matches found</option>
+              </select>
+            </div>
 
             <div className="col-12">
-              <button type="submit" className="btn btn-light">
-                Cancel
-              </button>
+              <label
+                className="visually-hidden"
+                htmlFor="inlineFormInputGroupAmount"
+              >
+                Amount
+              </label>
+              <div className="input-group">
+                <input
+                  type="number"
+                  className="form-control"
+                  id="inlineFormInputGroupAmount"
+                  placeholder="Amount"
+                />
+              </div>
             </div>
           </form>
 
@@ -75,10 +102,16 @@ const DisciplineDashboard = () => {
             </div>
 
             <div className="col-12">
-              <label className="visually-hidden" htmlFor="inlineFormInputGroupPunishment">Punishment</label>
+              <label className="visually-hidden" htmlFor="inlineFormInputGroupDetails">Details</label>
               <div className="input-group">
-                <input type="text" className="form-control" id="inlineFormInputGroupPunishment" placeholder="Punishment" />
+                <input type="text" className="form-control" id="inlineFormInputGroupDetails" placeholder="Details" />
               </div>
+            </div>
+
+            <div className="col-12" style={{ marginLeft: "15px" }}>
+              <button type="submit" className="btn btn-light">
+                Cancel
+              </button>
             </div>
 
             <div className="col-12">
@@ -93,4 +126,4 @@ const DisciplineDashboard = () => {
   );
 };
 
-export default DisciplineDashboard;
+export default PaymentsDashboard;
