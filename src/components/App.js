@@ -31,6 +31,7 @@ import Travel from './student/files/Travel';
 import Medical from './student/files/Medical';
 import Document from './student/files/Document';
 import Vocation from './student/files/Vocation';
+import Promotion from './student/task/Promotion';
 import Behaviour from './student/files/Behaviour';
 import Attendance from './student/files/Attendance';
 import Discipline from './student/files/Discipline';
@@ -78,6 +79,7 @@ function App() {
       <Route path='/student/files/medical' element={<Medical />} />
       <Route path='/student/files/document' element={<Document />} />
       <Route path='/student/files/vocation' element={<Vocation />} />
+      <Route path='/student/task/promotion' element={<Promotion />} />
       <Route path='/student/files/behaviour' element={<Behaviour />} />
       <Route path='/student/files/attendance' element={<Attendance />} />
       <Route path='/student/files/discipline' element={<Discipline />} />
@@ -86,10 +88,10 @@ function App() {
       <Route path='/student/task/fees/class_fees' element={<ClassFees />} />
       <Route path='/student/admission/add_student' element={<AddStudent />} />
       <Route path='/student/admission/new_student' element={<NewStudent />} />
+      <Route path='/student/task/student_change' element={<StudentChange />} />
       <Route path='/student/task/fees/transaction' element={<Transaction />} />
       <Route path='/student/task/fees/student_fees' element={<StudentFees />} />
       <Route path='/student/admission/active_student' element={<ActiveStudent />} />
-      <Route path='/student/task/fees/student_change' element={<StudentChange />} />
       <Route path='/student/admission/inactive_student' element={<InactiveStudent />} />
     </Routes>
   );
