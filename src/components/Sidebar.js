@@ -260,23 +260,23 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Task </span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
                   </a>
                   <ul className="sub-menu">
                     <li>
-                      <a href="javascript:;">
+                      <a href=":;">
                         <span className="title">Fees </span>
                         <span className="selected"></span>
                         <span className="arrow open"></span>
                       </a>
                       <ul className="sub-menu">
                         <li>
-                          <a className="ajaxify" href="class_fees.php">
-                            className Fees{" "}
-                          </a>
+                          <Link className="ajaxify" to="/student/task/fees/class_fees">
+                            Class Fees
+                          </Link>
                         </li>
                         <li>
                           <a className="ajaxify" href="student_fees.php">
