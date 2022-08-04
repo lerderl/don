@@ -39,6 +39,7 @@ import ClassFees from './student/task/fees/ClassFees';
 import AddStudent from './student/admission/AddStudent';
 import NewStudent from './student/admission/NewStudent';
 import StudentFees from './student/task/fees/StudentFees';
+import Transaction from './student/task/fees/Transaction';
 import StudentLibrary from './student/files/StudentLibrary';
 import ActiveStudent from './student/admission/ActiveStudent';
 import InactiveStudent from './student/admission/InactiveStudent';
@@ -84,6 +85,7 @@ function App() {
       <Route path='/student/task/fees/class_fees' element={<ClassFees />} />
       <Route path='/student/admission/add_student' element={<AddStudent />} />
       <Route path='/student/admission/new_student' element={<NewStudent />} />
+      <Route path='/student/task/fees/transaction' element={<Transaction />} />
       <Route path='/student/task/fees/student_fees' element={<StudentFees />} />
       <Route path='/student/admission/active_student' element={<ActiveStudent />} />
       <Route path='/student/admission/inactive_student' element={<InactiveStudent />} />
