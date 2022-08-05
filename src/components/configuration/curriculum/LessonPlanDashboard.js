@@ -106,58 +106,59 @@ const LessonPlanDashboard = () => {
                 Approve
               </label>
             </div>
-          </form>
+          
 
-          <form className="row row-cols-lg-auto g-3 align-items-center mt-0 mb-4">
-            <div className="col-12">
-              <label
-                htmlFor="exampleDataList"
-                className="form-label visually-hidden"
-              >
-                Datalist example
-              </label>
-              <input
-                className="form-control"
-                list="datalistOptions"
-                id="exampleDataList"
-                placeholder="Type to search class..."
-              />
-            </div>
+            <div className="row row-cols-lg-auto g-3 align-items-center mt-2">
+              <div className="col-12">
+                <label
+                  htmlFor="exampleDataList"
+                  className="form-label visually-hidden"
+                >
+                  Datalist example
+                </label>
+                <input
+                  className="form-control"
+                  list="datalistOptions"
+                  id="exampleDataList"
+                  placeholder="Type to search class..."
+                />
+              </div>
 
-            <div className="col-12">
-              <label
-                htmlFor="formFileSm"
-                className="form-label visually-hidden"
-              >
-                Small file input example
-              </label>
-              <input
-                className="form-control form-control-sm"
-                id="formFileSm"
-                type="file"
-                style={{ width: "160px" }}
-              />
-            </div>
+              <div className="col-12">
+                <label
+                  htmlFor="formFileSm"
+                  className="form-label visually-hidden"
+                >
+                  Small file input example
+                </label>
+                <input
+                  className="form-control form-control-sm"
+                  id="formFileSm"
+                  type="file"
+                  style={{ width: "160px" }}
+                />
+              </div>
 
-            <div className="col-12">
-              <label
-                htmlFor="exampleDataList"
-                className="form-label visually-hidden"
-              >
-                Datalist example
-              </label>
-              <input
-                className="form-control"
-                list="datalistOptions"
-                id="exampleDataList"
-                placeholder="Type to search verified by..."
-              />
-            </div>
+              <div className="col-12">
+                <label
+                  htmlFor="exampleDataList"
+                  className="form-label visually-hidden"
+                >
+                  Datalist example
+                </label>
+                <input
+                  className="form-control"
+                  list="datalistOptions"
+                  id="exampleDataList"
+                  placeholder="Type to search verified by..."
+                />
+              </div>
 
-            <div className="col-12">
-              <button type="submit" className="btn btn-success">
-                Submit
-              </button>
+              <div className="col-12">
+                <button type="submit" className="btn btn-success">
+                  Submit
+                </button>
+              </div>
             </div>
           </form>
 

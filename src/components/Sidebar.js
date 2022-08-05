@@ -306,19 +306,16 @@ const Sidebar = () => {
                       </Link>
                     </li>
                     <li>
-                      <a href="javascript:;">
+                      <a href=":;">
                         <span className="title">File Upload </span>
                         <span className="selected"></span>
                         <span className="arrow open"></span>
                       </a>
                       <ul className="sub-menu">
                         <li>
-                          <a
-                            className="ajaxify"
-                            href="upload_student_result.php"
-                          >
-                            Student Result{" "}
-                          </a>
+                          <Link className="ajaxify" to="/student/task/file_upload/result">
+                            Student Result
+                          </Link>
                         </li>
                         <li>
                           <a
