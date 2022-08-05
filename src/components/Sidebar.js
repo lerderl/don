@@ -318,12 +318,9 @@ const Sidebar = () => {
                           </Link>
                         </li>
                         <li>
-                          <a
-                            className="ajaxify"
-                            href="upload_student_behaviour.php"
-                          >
-                            Student Behaviour{" "}
-                          </a>
+                          <Link className="ajaxify" to="/student/task/file_upload/behaviour">
+                            Student Behaviour
+                          </Link>
                         </li>
                         <li>
                           <a
@@ -366,7 +363,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Setup </span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
@@ -397,7 +394,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-user-female"></i>
                 <span className="title">Parent </span>
                 <span className="selected"></span>
@@ -422,7 +419,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-users"></i>
                 <span className="title">Employee </span>
                 <span className="selected"></span>
@@ -430,7 +427,7 @@ const Sidebar = () => {
               </a>
               <ul className="sub-menu">
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Employment </span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
@@ -459,7 +456,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Files </span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
@@ -508,7 +505,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Task </span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
@@ -525,7 +522,7 @@ const Sidebar = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:;">
+                      <a href=":;">
                         <span className="title">File Upload </span>
                         <span className="selected"></span>
                         <span className="arrow open"></span>
@@ -550,7 +547,7 @@ const Sidebar = () => {
                       </ul>
                     </li>
                     <li>
-                      <a href="javascript:;">
+                      <a href=":;">
                         <span className="title">Staff Loan </span>
                         <span className="selected"></span>
                         <span className="arrow open"></span>
@@ -596,7 +593,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Setup </span>
                     <span className="selected"></span>
                     <span className="arrow open"></span>
@@ -657,7 +654,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-graduation"></i>
                 <span className="title">Alumni </span>
                 <span className="selected"></span>
@@ -687,7 +684,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-paper-plane"></i>
                 <span className="title">Transport</span>
                 <span className="selected"></span>
@@ -710,7 +707,7 @@ const Sidebar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Setup</span>
                     <span className="selected"></span>
                     <span className="arrow"></span>
@@ -731,7 +728,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-control-play"></i>
                 <span className="title">Payroll </span>
                 <span className="selected"></span>
@@ -751,7 +748,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-calculator"></i>
                 <span className="title">Accounting </span>
                 <span className="selected"></span>
@@ -759,7 +756,7 @@ const Sidebar = () => {
               </a>
               <ul className="sub-menu">
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Files</span>
                     <span className="selected"></span>
                     <span className="arrow"></span>
@@ -796,7 +793,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Transactions</span>
                     <span className="selected"></span>
                     <span className="arrow"></span>
@@ -853,7 +850,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Setup</span>
                     <span className="selected"></span>
                     <span className="arrow"></span>
@@ -919,7 +916,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-graph"></i>
                 <span className="title">Reports </span>
                 <span className="selected"></span>
@@ -927,7 +924,7 @@ const Sidebar = () => {
               </a>
               <ul className="sub-menu">
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Profile Reports </span>
                     <span className="selected"></span>
                     <span className="arrow"></span>
@@ -983,7 +980,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-bar-chart"></i>
                 <span className="title">Charts </span>
                 <span className="selected"></span>
@@ -991,7 +988,7 @@ const Sidebar = () => {
               </a>
               <ul className="sub-menu">
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Student Chart </span>
                     <span className="selected"></span>
                     <span className="arrow"></span>
@@ -1018,7 +1015,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a href="javascript:;">
+                  <a href=":;">
                     <span className="title">Employee Chart </span>
                     <span className="selected"></span>
                     <span className="arrow"></span>
@@ -1062,7 +1059,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-call-in"></i>
                 <span className="title">Messaging </span>
                 <span className="selected"></span>
@@ -1087,7 +1084,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-plus"></i>
                 <span className="title">Users </span>
                 <span className="selected"></span>
@@ -1112,7 +1109,7 @@ const Sidebar = () => {
               </ul>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href=":;">
                 <i className="icon-info"></i>
                 <span className="title">Trails </span>
                 <span className="selected"></span>
