@@ -63,7 +63,7 @@ const SportMembersDashboard = () => {
             </div>            
           </form>        
 
-          <form className="row row-cols-lg-auto g-3 align-items-center mt-2">
+          <form className="row row-cols-lg-auto g-3 align-items-center mt-2 mb-4">
             <div className="col-12">
               <select className="form-control form-select" id="autoSizingSelect" style={{ width: "160px" }}>
                 <option selected>Student</option>

@@ -1,7 +1,9 @@
+import Form from "react-bootstrap/Form";
+
 import Header from '../Header';
 import Actions from '../../Actions';
 
-const HostelDashboard = () => {
+const ClubMembersDashboard = () => {
   return (
     <div className="page-content-wrapper">
       <div className="page-content bg-light" style={{ minHeight: "773px" }}>
@@ -25,7 +27,7 @@ const HostelDashboard = () => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#!">
-              Hostel Allocation
+              Club Members
             </a>
           </li>
           <Actions />
@@ -37,33 +39,27 @@ const HostelDashboard = () => {
               className="nav-item text-secondary mt-3 mb-4"
               style={{ marginRight: "30px" }}
             >
-              Hostel Allocation
+              Club Members
             </li>
           </ul>
 
           <form className="row row-cols-lg-auto g-3 align-items-center mt-2">
             <div className="col-12">
               <select className="form-control form-select" id="autoSizingSelect" style={{ width: "160px" }}>
-                <option selected>Hostel</option>
+                <option selected>Club</option>
                 <option value="1"></option>
               </select>
             </div>
 
             <div className="col-12">
-              <label
-                className="visually-hidden"
-                for="inlineFormInputGroupRoom"
-              >
-                Room
-              </label>
-              <div className="input-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="inlineFormInputGroupRoom"
-                  placeholder="Room"
-                />
-              </div>
+              <label htmlFor="inputDate" className="form-label visually-hidden">Date</label>
+              <Form.Control type="date" style={{ width: "160px" }}></Form.Control>
+            </div>
+
+            <div className="col-12">
+              <button type="submit" className="btn btn-light">
+                Cancel
+              </button>
             </div>            
           </form>        
 
@@ -71,18 +67,32 @@ const HostelDashboard = () => {
             <div className="col-12">
               <select className="form-control form-select" id="autoSizingSelect" style={{ width: "160px" }}>
                 <option selected>Student</option>
-                <option value="1"></option>
+                <option value="1">GBADE SEGUN - 0003</option>
+                <option value="2">FIRSTJOHN JOSH - 0006</option>
+                <option value="3">FIRSTJOHN JUDE - 0008</option>
               </select>
             </div>
 
             <div className="col-12">
-              <button type="submit" className="btn btn-light" style={{ width: "64px" }}>
-                Cancel
-              </button>
+              <label
+                className="visually-hidden"
+                for="inlineFormInputGroupID"
+              >
+                Member ID
+              </label>
+              <div className="input-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  style={{ width: "160px" }}
+                  id="inlineFormInputGroupID"
+                  placeholder="Member ID (optional)"
+                />
+              </div>
             </div>
 
             <div className="col-12">
-              <button type="submit" className="btn btn-success" style={{ width: "64px" }}>
+              <button type="submit" className="btn btn-success">
                 Submit
               </button>
             </div>
@@ -93,4 +103,4 @@ const HostelDashboard = () => {
   );
 };
 
-export default HostelDashboard;
+export default ClubMembersDashboard;

@@ -37,6 +37,7 @@ import Behaviour from './student/files/Behaviour';
 import Attendance from './student/files/Attendance';
 import Discipline from './student/files/Discipline';
 import Payments from './student/task/fees/Payments';
+import ClubMembers from './student/task/ClubMembers';
 import ClassFees from './student/task/fees/ClassFees';
 import SportMembers from './student/task/SportMembers';
 import AddStudent from './student/admission/AddStudent';
@@ -92,6 +93,7 @@ function App() {
       <Route path='/student/files/discipline' element={<Discipline />} />
       <Route path='/student/task/fees/payments' element={<Payments />} />
       <Route path='/student/files/library' element={<StudentLibrary />} />
+      <Route path='/student/task/club_members' element={<ClubMembers />} />
       <Route path='/student/task/fees/class_fees' element={<ClassFees />} />
       <Route path='/student/task/sport_members' element={<SportMembers />} />
       <Route path='/student/admission/add_student' element={<AddStudent />} />
