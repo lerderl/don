@@ -396,9 +396,9 @@ const Sidebar = () => {
               </a>
               <ul className="sub-menu">
                 <li>
-                  <a className="ajaxify" href="add_parent.php">
-                    Add Parent{" "}
-                  </a>
+                  <Link className="ajaxify" to="/student/parent/add">
+                    Add Parent
+                  </Link>
                 </li>
                 <li>
                   <a className="ajaxify" href="existing_parents.php">

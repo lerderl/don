@@ -57,6 +57,9 @@ import StudentResult from './student/task/fileUpload/StudentResult';
 import StudentBehaviour from './student/task/fileUpload/StudentBehaviour';
 import StudentAttendance from './student/task/fileUpload/StudentAttendance';
 
+// Parent imports
+import Add from './parent/Add';
+
 function App() {
   return (
     <Routes>
@@ -115,6 +118,9 @@ function App() {
       <Route path='/student/admission/inactive_student' element={<InactiveStudent />} />
       <Route path='/student/task/file_upload/behaviour' element={<StudentBehaviour />} />
       <Route path='/student/task/file_upload/attendance' element={<StudentAttendance />} />
+
+      {/* Parent routes */}
+      <Route path='/student/parent/add' element={<Add />} />
     </Routes>
   );
 }
