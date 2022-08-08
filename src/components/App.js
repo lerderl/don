@@ -48,6 +48,7 @@ import InactiveStudent from './student/admission/InactiveStudent';
 import StudentRemark from './student/task/fileUpload/StudentRemark';
 import StudentResult from './student/task/fileUpload/StudentResult';
 import StudentBehaviour from './student/task/fileUpload/StudentBehaviour';
+import StudentAttendance from './student/task/fileUpload/StudentAttendance';
 
 function App() {
   return (
@@ -99,6 +100,7 @@ function App() {
       <Route path='/student/admission/active_student' element={<ActiveStudent />} />
       <Route path='/student/admission/inactive_student' element={<InactiveStudent />} />
       <Route path='/student/task/file_upload/behaviour' element={<StudentBehaviour />} />
+      <Route path='/student/task/file_upload/attendance' element={<StudentAttendance />} />
     </Routes>
   );
 }
