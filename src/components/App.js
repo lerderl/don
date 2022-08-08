@@ -30,6 +30,7 @@ import Remark from './student/files/Remark';
 import Result from './student/files/Result';
 import Travel from './student/files/Travel';
 import Medical from './student/files/Medical';
+import Booklist from './student/setup/Booklist';
 import Document from './student/files/Document';
 import FeeGroup from './student/setup/FeeGroup';
 import FeeSetup from './student/setup/FeeSetup';
@@ -87,6 +88,7 @@ function App() {
       <Route path='/student/files/result' element={<Result />} />
       <Route path='/student/files/travel' element={<Travel />} />
       <Route path='/student/files/medical' element={<Medical />} />
+      <Route path='/student/setup/booklist' element={<Booklist />} />
       <Route path='/student/files/document' element={<Document />} />
       <Route path='/student/files/vocation' element={<Vocation />} />
       <Route path='/student/setup/fee_group' element={<FeeGroup />} />

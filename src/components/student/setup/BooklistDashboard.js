@@ -1,7 +1,9 @@
+import Form from "react-bootstrap/Form";
+
 import Header from '../Header';
 import Actions from '../../Actions';
 
-const FeeSetupDashboard = () => {
+const BooklistDashboard = () => {
   return (
     <div className="page-content-wrapper">
       <div className="page-content bg-light" style={{ minHeight: "773px" }}>
@@ -25,7 +27,7 @@ const FeeSetupDashboard = () => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#!">
-              Fee Setup
+              Booklist Setup
             </a>
           </li>
           <Actions />
@@ -37,7 +39,7 @@ const FeeSetupDashboard = () => {
               className="nav-item text-secondary mt-3 mb-4"
               style={{ marginRight: "30px" }}
             >
-              Fee Setup
+              Booklist Setup
             </li>
           </ul>
 
@@ -51,37 +53,45 @@ const FeeSetupDashboard = () => {
             </div>
 
             <div className="col-12">
-              <label className="visually-hidden" for="inlineFormInputGroupFee">Fee</label>
+              <select className="form-control form-select" id="autoSizingSelect" style={{ width: "160px" }}>
+                <option selected>Subject</option>
+                <option value="1"></option>
+              </select>
+            </div>
+
+            <div className="col-12">
+              <label className="visually-hidden" for="inlineFormInputGroupAuthor">Author</label>
               <div className="input-group">
-                <input type="text" className="form-control" id="inlineFormInputGroupFee" placeholder="Fee" style={{ width: "160px" }} />
+                <input type="text" className="form-control" id="inlineFormInputGroupAuthor" placeholder="Author" />
               </div>
             </div>
 
             <div className="col-12">
-              <select className="form-control form-select" id="autoSizingSelect" style={{ width: "160px" }}>
-                <option selected>Class Fees</option>
-              </select>
+              <label htmlFor="inputDate" className="form-label visually-hidden">Publication Date</label>
+              <Form.Control type="date" style={{ width: "160px" }}></Form.Control>
             </div>           
           </form> 
 
-          <form className="row row-cols-lg-auto g-3 align-items-center mt-4">
+          <form className="row row-cols-lg-auto g-3 align-items-center mt-4 mb-4">
             <div className="col-12">
               <select className="form-control form-select" id="autoSizingSelect" style={{ width: "160px" }}>
-                <option selected>Nominal Code</option>
-                <option value="1">AP003 - VAT PAYABLE</option>
-                <option value="2">IC005 - PURCHASE DISCOUNT</option>
-                <option value="3">IC006 - TUITION FEE</option>
+                <option selected>Class</option>
+                <option value="1"></option>
               </select>
             </div>
 
             <div className="col-12">
-              <select className="form-control form-select" id="autoSizingSelect" style={{ width: "160px" }}>
-                <option selected>Fee group</option>
-                <option value="1">School Fees</option>
-                <option value="2">Transport</option>
-                <option value="3">Boarding</option>
-                <option value="4">Fines & Damages</option>
-              </select>
+              <label className="visually-hidden" for="inlineFormInputGroupTitle">Title</label>
+              <div className="input-group">
+                <input type="text" className="form-control" id="inlineFormInputGroupTitle" placeholder="Title" style={{ width: "160px" }} />
+              </div>
+            </div>
+
+            <div className="col-12">
+              <label className="visually-hidden" for="inlineFormInputGroupPublisher">Publisher</label>
+              <div className="input-group">
+                <input type="text" className="form-control" id="inlineFormInputGroupPublisher" placeholder="Publisher" />
+              </div>
             </div>
 
             <div className="col-12">
@@ -92,34 +102,10 @@ const FeeSetupDashboard = () => {
               <button type="submit" className="btn btn-success" style={{ width: "75px" }}>Submit</button>
             </div>
           </form>
-
-          <table className="table table-bordered mt-5 mb-5">
-            <thead>
-              <tr>
-                <th scope="col">Serial</th>
-                <th scope="col">Fee</th>
-                <th scope="col">Group</th>
-                <th scope="col">Nominal A/C</th>
-                <th scope="col">Target</th>
-                <th colSpan="2">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
   );
 };
 
-export default FeeSetupDashboard;
+export default BooklistDashboard;
