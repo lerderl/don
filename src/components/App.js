@@ -25,6 +25,7 @@ import ClassTimetable from './configuration/timetable/ClassTimetable';
 import SchoolNotification from './configuration/event/SchoolNotification';
 
 // Student imports
+import Hostel from './student/task/Hostel';
 import Remark from './student/files/Remark';
 import Result from './student/files/Result';
 import Travel from './student/files/Travel';
@@ -77,6 +78,7 @@ function App() {
       <Route path='/configuration/event/school_notification' element={<SchoolNotification />} />
 
       {/* Student routes */}
+      <Route path='/student/task/hostel' element={<Hostel />} />
       <Route path='/student/files/remark' element={<Remark />} />
       <Route path='/student/files/result' element={<Result />} />
       <Route path='/student/files/travel' element={<Travel />} />
