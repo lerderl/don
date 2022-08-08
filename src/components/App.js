@@ -42,6 +42,7 @@ import Discipline from './student/files/Discipline';
 import Payments from './student/task/fees/Payments';
 import ClubMembers from './student/task/ClubMembers';
 import ClassFees from './student/task/fees/ClassFees';
+import HostelSetup from './student/setup/HostelSetup';
 import SportMembers from './student/task/SportMembers';
 import AddStudent from './student/admission/AddStudent';
 import NewStudent from './student/admission/NewStudent';
@@ -101,6 +102,7 @@ function App() {
       <Route path='/student/files/library' element={<StudentLibrary />} />
       <Route path='/student/task/club_members' element={<ClubMembers />} />
       <Route path='/student/task/fees/class_fees' element={<ClassFees />} />
+      <Route path='/student/setup/hostel_setup' element={<HostelSetup />} />
       <Route path='/student/task/sport_members' element={<SportMembers />} />
       <Route path='/student/admission/add_student' element={<AddStudent />} />
       <Route path='/student/admission/new_student' element={<NewStudent />} />
