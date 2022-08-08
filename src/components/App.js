@@ -31,6 +31,7 @@ import Result from './student/files/Result';
 import Travel from './student/files/Travel';
 import Medical from './student/files/Medical';
 import Document from './student/files/Document';
+import FeeGroup from './student/setup/FeeGroup';
 import Vocation from './student/files/Vocation';
 import Promotion from './student/task/Promotion';
 import Behaviour from './student/files/Behaviour';
@@ -87,6 +88,7 @@ function App() {
       <Route path='/student/files/medical' element={<Medical />} />
       <Route path='/student/files/document' element={<Document />} />
       <Route path='/student/files/vocation' element={<Vocation />} />
+      <Route path='/student/setup/fee_group' element={<FeeGroup />} />
       <Route path='/student/task/promotion' element={<Promotion />} />
       <Route path='/student/files/behaviour' element={<Behaviour />} />
       <Route path='/student/files/attendance' element={<Attendance />} />
