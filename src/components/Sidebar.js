@@ -458,13 +458,13 @@ const Sidebar = () => {
                   <ul className="sub-menu">
                     <li>
                       <a className="ajaxify" href="biometric_record.php">
-                        Employee Biometric{" "}
+                        Employee Biometric
                       </a>
                     </li>
                     <li>
-                      <a className="ajaxify" href="evaluation.php">
-                        Employee Appraisal{" "}
-                      </a>
+                      <Link className="ajaxify" to="/student/employee/files/employee_appraisal">
+                        Employee Appraisal
+                      </Link>
                     </li>
                     <li>
                       <a className="ajaxify" href="attendance_record.php">
