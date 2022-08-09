@@ -23,17 +23,17 @@ const Header = () => {
             </button>
             <ul className="dropdown-menu">
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#!">
                   <i className="icon-home"></i>My Account
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#!">
                   <i className="icon-home"></i>My Calender
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#!">
                   <i className="icon-home"></i>My Notification
                 </a>
               </li>
@@ -41,12 +41,12 @@ const Header = () => {
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#!">
                   <i className="icon-home"></i>Lock Screen
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="#!">
                   <i className="icon-home"></i>Log Out
                 </a>
               </li>

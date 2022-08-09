@@ -62,6 +62,9 @@ import Add from './parent/Add';
 import Change from './parent/Change';
 import Existing from './parent/Existing';
 
+// Employee imports
+import AddEmployee from './employee/employment/AddEmployee';
+
 function App() {
   return (
     <Routes>
@@ -125,6 +128,9 @@ function App() {
       <Route path='/student/parent/add' element={<Add />} />
       <Route path='/student/parent/change' element={<Change />} />
       <Route path='/student/parent/existing' element={<Existing />} />
+
+      {/* Employee routes */}
+      <Route path='/student/employee/employment/add_employee' element={<AddEmployee />} />
     </Routes>
   );
 }
