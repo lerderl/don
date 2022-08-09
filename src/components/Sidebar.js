@@ -401,9 +401,9 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a className="ajaxify" href="existing_parents.php">
-                    Existing Parents{" "}
-                  </a>
+                  <Link className="ajaxify" to="/student/parent/existing">
+                    Existing Parents
+                  </Link>
                 </li>
                 <li>
                   <a className="ajaxify" href="parent_change.php">
