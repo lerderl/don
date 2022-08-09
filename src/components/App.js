@@ -59,6 +59,7 @@ import StudentAttendance from './student/task/fileUpload/StudentAttendance';
 
 // Parent imports
 import Add from './parent/Add';
+import Change from './parent/Change';
 import Existing from './parent/Existing';
 
 function App() {
@@ -122,6 +123,7 @@ function App() {
 
       {/* Parent routes */}
       <Route path='/student/parent/add' element={<Add />} />
+      <Route path='/student/parent/change' element={<Change />} />
       <Route path='/student/parent/existing' element={<Existing />} />
     </Routes>
   );

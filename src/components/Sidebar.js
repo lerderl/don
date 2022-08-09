@@ -406,9 +406,9 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a className="ajaxify" href="parent_change.php">
-                    Parent Change{" "}
-                  </a>
+                  <Link className="ajaxify" to="/student/parent/change">
+                    Parent Change
+                  </Link>
                 </li>
               </ul>
             </li>
