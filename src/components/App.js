@@ -66,6 +66,7 @@ import Existing from './parent/Existing';
 import AddEmployee from './employee/employment/AddEmployee';
 import NewEmployees from './employee/employment/NewEmployees';
 import ActiveEmployees from './employee/employment/ActiveEmployees';
+import InactiveEmployees from './employee/employment/InactiveEmployees';
 
 function App() {
   return (
@@ -135,6 +136,7 @@ function App() {
       <Route path='/student/employee/employment/add_employee' element={<AddEmployee />} />
       <Route path='/student/employee/employment/new_employees' element={<NewEmployees />} />
       <Route path='/student/employee/employment/active_employees' element={<ActiveEmployees />} />
+      <Route path='/student/employee/employment/inactive_employees' element={<InactiveEmployees />} />
     </Routes>
   );
 }
